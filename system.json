@@ -1,11 +1,14 @@
 {
   "authors": [
     {
-      "name": "Elwinner08"
+      "discord": "",
+      "email": "",
+      "name": "Elwinner08",
+      "url": ""
     }
   ],
-  //"manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  //"download": "This must link to a .zip file of the current version",
+  "manifest": "https://github.com/elwinner08/lames-cardinal/blob/main/system.json",
+  "download": "https://github.com/elwinner08/lames-cardinal/archive/refs/tags/first-release.zip",
   "background": "systems/lames-cardinal/assets/anvil-impact.png",
   "compatibility": {
     "minimum": "11",
@@ -23,13 +26,13 @@
       "path": "lang/fr.json"
     }
   ],
-  //"url": "Replace this with a link to your public repository",
+  "url": "https://https://github.com/elwinner08/lames-cardinal/",
   "license": "LICENSE.txt",
-  //"bugs": "Replace this with a link to file issues or tickets",
-  //"changelog": "CHANGELOG.md",
+  "bugs": "https://github.com/elwinner08/lames-cardinal/issues",
+  "changelog": "https://github.com/elwinner08/lames-cardinal/blob/first-release/CHANGELOG.md",
   "media": [
     {
-      //"url": "systems/lames-cardinal/assets/anvil-impact.png",
+      "url": "systems/lames-cardinal/assets/anvil-impact.png",
       "thumbnail": "systems/lames-cardinal/assets/anvil-impact.png",
       "type": "setup"
     }
