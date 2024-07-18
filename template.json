@@ -27,21 +27,21 @@
         "armes": "",
         "equipement": "",
         "possession": "",
-        "niveau-vie": "", // a mettre en liste de valeurs possibles [ "Pauvre", "Commun", "Noble", "Riche" ],
+        "niveau-vie": [ "Pauvre", "Commun", "Noble", "Riche" ],
         "historique": "",
         "experience": "",
         "pointsxp": 0,
         "relation": {
           "nom": "",
-          "niveau": "" // a mettre en liste de valeurs possibles [ 1, 2, 3, 4 ]
+          "niveau": [ 1, 2, 3, 4 ]
         },
         "contacts": {
           "nom": "",
-          "niveau": "" // a mettre en liste de valeurs possibles [ 1, 2, 3, 4 ]
-        }
-        /*"arcane1": {Tarot} liste à créer
-        "arcane2": {Tarot -Arcane 1} liste à créer
-        "ecole-escrime": "", // a mettre en liste de valeurs possibles [ "Germanique", "Française", "Italienne", "Espagnole" ],*/
+          "niveau": [1,2,3,4]
+        },
+        "arcane1": "",
+        "arcane2": "",
+        "ecole-escrime": [ "Germanique", "Française", "Italienne", "Espagnole" ]
       },
 
       "abilities": {
@@ -157,7 +157,7 @@
       "attaque": 0,
       "defense": 0,
       "vitalite": 0,
-      "taille": "", // a mettre en liste de valeurs possibles [ 1, 2, 3, 4, 5,6 ],
+      "taille": [1,2,3,4,5,6],
       "armure": 0
     }
   },
@@ -181,9 +181,9 @@
       "templates": [ "base" ],
       "spellLevel": 1
     }
-  }
+  },
 
- /* "archetype": {
+  "archetype": {
     "contacts": "",
     "competences": {
       "athletisme": {
@@ -278,26 +278,26 @@
 
   },
   "cartes": {
-    "valeur": "", // a mettre en liste de valeurs possibles [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "V", "C", "D", "R" ],
-    "couleur": "", // a mettre en liste de valeurs possibles [ "rouge", "noir" ],
-    "signe": "", // a mettre en liste de valeurs possibles [ "souffle", "griffe", "sang", "ecaille" ],
+    "valeur":  [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "V", "C", "D", "R" ],
+    "couleur":  [ "rouge", "noir" ],
+    "signe":  [ "souffle", "griffe", "sang", "ecaille" ],
     "figure": false,
     "visuelFront": "assets/anvil-impact.png",
     "visuelArriere": "assets/anvil-impact.png"
   },
 
   "tarot": {
-    "numero": 1, // liste possible 1 à 21
-    "titre": "", // =tarot.titre[0] liste de tarot à créer
-    "marque": "", // =tarot.marque[0] liste de tarot à créer
-    "competence": "", // =tarot.competence[0] liste de tarot à créer
-    "caractere1": "", // =tarot.caractere1[0] liste de tarot à créer
-    "caractere2": "", // =tarot.caractere2[0] liste de tarot à créer
-    "visuelFront": "assets/anvil-impact.png", // =les 2 visuels front et arrière devraient ^tre tirés de la liste tarot aussi ou au moins le chemin d'accès
+    "numero": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+    "titre": "", 
+    "marque": "", 
+    "competence": "", 
+    "caractere1": "", 
+    "caractere2": "", 
+    "visuelFront": "assets/anvil-impact.png", 
     "visuelArriere": "assets/anvil-impact.png",
     "visuelBG": "assets/anvil-impact.png",
-    "arcaneoppose": "" //=tarot.oppose[0] liste de tarot à créer
+    "arcaneoppose": "" 
 
-  }*/
+  }
 }
 
