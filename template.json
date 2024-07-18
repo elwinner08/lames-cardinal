@@ -1,73 +1,302 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": [ "character", "npc" ],
     "templates": {
       "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
-        },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
-        },
-        "biography": ""
+        "nom": "",
+        "avatar": "assets/anvil-impact.png",
+        "tenacite": 0,
+        "vitalite": 0,
+        "notes": ""
+
       }
     },
     "character": {
-      "templates": ["base"],
+      "templates": [ "base" ],
       "attributes": {
-        "level": {
-          "value": 1
+        "archetype1": "",
+        "archetype2": "",
+        "prenom": "",
+        "origine": "",
+        "age": 0,
+        "sexe": [ "M", "F" ],
+        "description": "",
+        "habillement": "",
+        //"arcane1": {Tarot} liste à créer
+        //"arcane2": {Tarot -Arcane 1} liste à créer
+        "ecole-escrime": "", // a mettre en liste de valeurs possibles [ "Germanique", "Française", "Italienne", "Espagnole" ],
+        "feintes": "",
+        "bottes": "",
+        "armes": "",
+        "equipement": "",
+        "possession": "",
+        "niveau-vie": "", // a mettre en liste de valeurs possibles [ "Pauvre", "Commun", "Noble", "Riche" ],
+        "historique": "",
+        "experience": "",
+        "pointsxp": 0,
+        "relation": {
+          "nom": "",
+          "niveau": "" // a mettre en liste de valeurs possibles [ 1, 2, 3, 4 ]
+        },
+        "contacts": {
+          "nom": "",
+          "niveau": "" // a mettre en liste de valeurs possibles [ 1, 2, 3, 4 ]
         }
       },
+
       "abilities": {
-        "str": {
-          "value": 10
+        "carac": {
+          "puissant": {
+            "value": 0,
+            "max": 3
+          },
+          "vif": {
+            "value": 0,
+            "max": 3
+          },
+          "galant": {
+            "value": 0,
+            "max": 3
+          }
         },
-        "dex": {
-          "value": 10
-        },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
-        },
-        "cha": {
-          "value": 10
+        "competences": {
+          "athletisme": {
+            "value": 0,
+            "max": 8
+          },
+          "autorite": {
+            "value": 0,
+            "max": 8
+          },
+          "bagarre": {
+            "value": 0,
+            "max": 8
+          },
+          "equilibre": {
+            "value": 0,
+            "max": 8
+          },
+          "volonte": {
+            "value": 0,
+            "max": 8
+          },
+          "adaptation": {
+            "value": 0,
+            "max": 8
+          },
+          "creation": {
+            "value": 0,
+            "max": 8
+          },
+          "duperie": {
+            "value": 0,
+            "max": 8
+          },
+          "furtivite": {
+            "value": 0,
+            "max": 8
+          },
+          "vigilance": {
+            "value": 0,
+            "max": 8
+          },
+          "intrigue": {
+            "value": 0,
+            "max": 8
+          },
+          "jeu": {
+            "value": 0,
+            "max": 8
+          },
+          "negoce": {
+            "value": 0,
+            "max": 8
+          },
+          "persuasion": {
+            "value": 0,
+            "max": 8
+          },
+          "seduction": {
+            "value": 0,
+            "max": 8
+          },
+          "erudition": {
+            "value": 0,
+            "max": 8
+          },
+          "investigation": {
+            "value": 0,
+            "max": 8
+          },
+          "medecine": {
+            "value": 0,
+            "max": 8
+          },
+          "technique": {
+            "value": 0,
+            "max": 8
+          },
+          "tir": {
+            "value": 0,
+            "max": 8
+          },
+          "occultisme": {
+            "value": 0,
+            "max": 8
+          },
+          "escrime": {
+            "value": 0,
+            "max": 8
+          }
         }
       }
     },
     "npc": {
-      "templates": ["base"],
-      "cr": 0
+      "templates": [ "base" ],
+      "niveau": 0,
+      "attaque": 0,
+      "defense": 0,
+      "vitalite": 0,
+      "taille": "", // a mettre en liste de valeurs possibles [ 1, 2, 3, 4, 5,6 ],
+      "armure": 0
     }
-  },
+    },
   "Item": {
-    "types": ["item", "feature", "spell"],
-    "templates": {
-      "base": {
-        "description": ""
+      "types": [ "item", "feature", "spell" ],
+      "templates": {
+        "base": {
+          "description": ""
+        }
+      },
+      "item": {
+        "templates": [ "base" ],
+        "quantity": 1,
+        "weight": 0,
+        "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+      },
+      "feature": {
+        "templates": [ "base" ]
+      },
+      "spell": {
+        "templates": [ "base" ],
+        "spellLevel": 1
       }
     },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
-    },
-    "feature": {
-      "templates": ["base"]
-    },
-    "spell": {
-      "templates": ["base"],
-      "spellLevel": 1
+  "cartes": {
+    "valeur": "", // a mettre en liste de valeurs possibles [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "V", "C", "D", "R" ],
+    "couleur": "", // a mettre en liste de valeurs possibles [ "rouge", "noir" ],
+    "signe": "", // a mettre en liste de valeurs possibles [ "souffle", "griffe", "sang", "ecaille" ],
+    "figure": false,
+    "visuelFront": "assets/anvil-impact.png",
+    "visuelArriere": "assets/anvil-impact.png"
+  },
+  "tarot": {
+    "numero": 1, // liste possible 1 à 21
+    "titre": "", // =tarot.titre[0] liste de tarot à créer
+    "marque": "", // =tarot.marque[0] liste de tarot à créer
+    "competence": "", // =tarot.competence[0] liste de tarot à créer
+    "caractere1": "", // =tarot.caractere1[0] liste de tarot à créer
+    "caractere2": "", // =tarot.caractere2[0] liste de tarot à créer
+    "visuelFront": "assets/anvil-impact.png", // =les 2 visuels front et arrière devraient ^tre tirés de la liste tarot aussi ou au moins le chemin d'accès
+    "visuelArriere": "assets/anvil-impact.png",
+    "visuelBG": "assets/anvil-impact.png",
+    "arcaneoppose": "" //=tarot.oppose[0] liste de tarot à créer
+
+  },
+  "archetype": {
+    "contacts": "",
+    "competences": {
+      "athletisme": {
+        "value": 0,
+        "max": 4
+      },
+      "autorite": {
+        "value": 0,
+        "max": 4
+      },
+      "bagarre": {
+        "value": 0,
+        "max": 4
+      },
+      "equilibre": {
+        "value": 0,
+        "max": 4
+      },
+      "volonte": {
+        "value": 0,
+        "max": 4
+      },
+      "adaptation": {
+        "value": 0,
+        "max": 4
+      },
+      "creation": {
+        "value": 0,
+        "max": 4
+      },
+      "duperie": {
+        "value": 0,
+        "max": 4
+      },
+      "furtivite": {
+        "value": 0,
+        "max": 4
+      },
+      "vigilance": {
+        "value": 0,
+        "max": 4
+      },
+      "intrigue": {
+        "value": 0,
+        "max": 4
+      },
+      "jeu": {
+        "value": 0,
+        "max": 4
+      },
+      "negoce": {
+        "value": 0,
+        "max": 4
+      },
+      "persuasion": {
+        "value": 0,
+        "max": 4
+      },
+      "seduction": {
+        "value": 0,
+        "max": 4
+      },
+      "erudition": {
+        "value": 0,
+        "max": 4
+      },
+      "investigation": {
+        "value": 0,
+        "max": 4
+      },
+      "medecine": {
+        "value": 0,
+        "max": 4
+      },
+      "technique": {
+        "value": 0,
+        "max": 4
+      },
+      "tir": {
+        "value": 0,
+        "max": 4
+      },
+      "occultisme": {
+        "value": 0,
+        "max": 4
+      },
+      "escrime": {
+        "value": 0,
+        "max": 4
+      }
     }
+
   }
-}
+
+  }
+
