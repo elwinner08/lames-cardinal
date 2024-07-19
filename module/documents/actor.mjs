@@ -4,7 +4,8 @@
  */
 export class LamesCardinalActor extends Actor {
   /** @override */
-  prepareData() {
+    prepareData() {
+      //
     // Prepare data for the actor. Calling the super version of this executes
     // the following, in order: data reset (to clear active effects),
     // prepareBaseData(), prepareEmbeddedDocuments() (including active effects),
