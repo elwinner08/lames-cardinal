@@ -79,8 +79,8 @@ export class LamesCardinalActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.LAMES_CARDINAL.abilities[k]) ?? k;
+    for (let [k, v] of Object.entries(context.system.carac)) {
+      v.label = game.i18n.localize(CONFIG.LAMES_CARDINAL.carac[k]) ?? k;
     }
   }
 

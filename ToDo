@@ -1,26 +1,99 @@
-Actor.character.niveau-vie : liste : [ "Pauvre", "Commun", "Noble", "Riche" ]
-Actor.character.relation.niveau [1-4]
-Actor.character.contacts.niveau [1-4]
-Actor.character.ecole-escrime [ "Germanique", "Française", "Italienne", "Espagnole" ]
-Actor.npc.taille [1,2,3,4,5,6]
+Actor.character.niveau-vie : liste : [
+  "Pauvre",
+  "Commun",
+  "Noble",
+  "Riche"
+]
+Actor.character.relation.niveau [
+  1-4
+]
+Actor.character.contacts.niveau [
+  1-4
+]
+Actor.character.ecole-escrime [
+  "Germanique",
+  "Française",
+  "Italienne",
+  "Espagnole"
+]
+Actor.npc.taille [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6
+]
 Actor.cartes.{
-  valeur [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "V", "C", "D", "R" ]
-    "couleur":  [ "rouge", "noir" ],
-    "signe":  [ "souffle", "griffe", "sang", "ecaille" ],
-    "figure": false,
-    "visuelFront": "assets/anvil-impact.png",
-    "visuelArriere": "assets/anvil-impact.png"
+  valeur [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "V",
+    "C",
+    "D",
+    "R"
+  ]
+    "couleur": [
+    "rouge",
+    "noir"
+  ],
+  "signe": [
+    "souffle",
+    "griffe",
+    "sang",
+    "ecaille"
+  ],
+  "figure": false,
+  "visuelFront": "assets/anvil-impact.png",
+  "visuelArriere": "assets/anvil-impact.png"
 }
 Actor.tarot {
-    "numero": [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
-    "titre": "", 
-    "marque": "", 
-    "competence": "", 
-    "caractere1": "", 
-    "caractere2": "", 
-    "visuelFront": "assets/anvil-impact.png", 
-    "visuelArriere": "assets/anvil-impact.png",
-    "visuelBG": "assets/anvil-impact.png",
-    "arcaneoppose": "" 
+  "numero": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "titre": "",
+  "marque": "",
+  "competence": "",
+  "caractere1": "",
+  "caractere2": "",
+  "visuelFront": "assets/anvil-impact.png",
+  "visuelArriere": "assets/anvil-impact.png",
+  "visuelBG": "assets/anvil-impact.png",
+  "arcaneoppose": ""
 }
-rhrserhvghbj
+/*
+Les cartes sont tirées au moment de l'épreuve (simple ou complexe mais pas dramatique), visibles par tout le monde (sauf si opposition dramatique).
+Le tir est commandé par la caractéristique dépendante de la compétence en jeu. Le nombre de réussites dépend du nombre de carte de la couleur de 
+la caractéristique (1 réussite par carte, 2 par figure). Calculer automatiquement le nombre de réussite, l'afficher et afficher un bouton (MJ)
+ pour masquer les cartes tirées. 
+
+ Mettre les caractéristique dans le sheet-header sous carac grid grid-4
+ */

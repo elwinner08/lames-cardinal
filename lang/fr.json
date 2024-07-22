@@ -1,12 +1,138 @@
 {
   "LAMES_CARDINAL": {
+    "carac": {
+      "puissant": {
+        "long": "Puissant",
+        "abbr": "pui"
+      },
+      "fin": {
+        "long": "Fin",
+        "abbr": "fin"
+      },
+      "vif": {
+        "long": "Vif",
+        "abbr": "vif"
+      },
+      "galant": {
+        "long": "Galant",
+        "abbr": "gal"
+      }
+    },
+    "competences": {
+      "athletisme": {
+        "long": "Athlétisme",
+        "abbr": "athlé"
+      },
+      "autorite": {
+        "long": "Autorité",
+        "abbr": "aut"
+      },
+      "bagarre": {
+        "long": "Bagarre",
+        "abbr": "bag"
+      },
+      "equitation": {
+        "long": "Equitation",
+        "abbr": "équ"
+      },
+      "volonte": {
+        "long": "Volonté",
+        "abbr": "vol"
+      },
+      "adaptation": {
+        "long": "Adaptation",
+        "abbr": "Ada"
+      },
+      "creativite": {
+        "long": "Créativité",
+        "abbr": "créa"
+      },
+      "duperie": {
+        "long": "Duperie",
+        "abbr": "dup"
+      },
+      "furtivite": {
+        "long": "Furtivité",
+        "abbr": "fufu"
+      },
+      "vigilance": {
+        "long": "Vigilance",
+        "abbr": "vig"
+      },
+      "intrigue": {
+        "long": "Intrigue",
+        "abbr": "int"
+      },
+      "jeu": {
+        "long": "Jeu",
+        "abbr": "jeu"
+      },
+      "negoce": {
+        "long": "Négoce",
+        "abbr": "nég"
+      },
+      "persuasion": {
+        "long": "Persuasion",
+        "abbr": "per"
+      },
+      "seduction": {
+        "long": "Séduction",
+        "abbr": "séd"
+      },
+      "erudition": {
+        "long": "Erudition",
+        "abbr": "eru"
+      },
+      "investigation": {
+        "long": "Investigation",
+        "abbr": "inv"
+      },
+      "medecine": {
+        "long": "Médecine",
+        "abbr": "méd"
+      },
+      "technique": {
+        "long": "Technique",
+        "abbr": "tec"
+      },
+      "tir": {
+        "long": "Tir",
+        "abbr": "tir"
+      },
+      "escrime": {
+        "long": "Escrime",
+        "abbr": "esc"
+      },
+      "occultisme": {
+        "long": "Occultisme",
+        "abbr": "occ"
+      }
+    },
     "Ability": {
-      "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Str": {
+        "long": "Strength",
+        "abbr": "str"
+      },
+      "Con": {
+        "long": "Constitution",
+        "abbr": "con"
+      },
+      "Dex": {
+        "long": "Dexterity",
+        "abbr": "dex"
+      },
+      "Int": {
+        "long": "Intelligence",
+        "abbr": "int"
+      },
+      "Wis": {
+        "long": "Wisdom",
+        "abbr": "wis"
+      },
+      "Cha": {
+        "long": "Charisma",
+        "abbr": "cha"
+      }
     },
     "SheetLabels": {
       "Actor": "LamesCardinal Actor Sheet",
@@ -26,7 +152,6 @@
       "Inactive": "Inactive Effects"
     }
   },
-
   "TYPES": {
     "Actor": {
       "character": "Character",

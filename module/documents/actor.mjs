@@ -4,8 +4,8 @@
  */
 export class LamesCardinalActor extends Actor {
   /** @override */
-    prepareData() {
-      //
+  prepareData() {
+    //
     // Prepare data for the actor. Calling the super version of this executes
     // the following, in order: data reset (to clear active effects),
     // prepareBaseData(), prepareEmbeddedDocuments() (including active effects),
@@ -19,7 +19,7 @@ export class LamesCardinalActor extends Actor {
     // documents or derived data.
   }
 
-  /**
+  /** 
    * @override
    * Augment the actor source data with additional dynamic data. Typically,
    * you'll want to handle most of your calculated/derived data in this step.
@@ -49,9 +49,15 @@ export class LamesCardinalActor extends Actor {
     const systemData = actorData.system;
 
     // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
+    // 1ère Loop pour les carac
+    for (let [key, carac] of Object.entries(systemData.carac)) {
       // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
+      carac.mod = Math.floor((carac.value - 10) / 2);
+    }
+    // 2e Loop pour les compétences
+    for (let [key, competences] of Object.entries(systemData.competences)) {
+      // Calculate the modifier using d20 rules.
+      competences.mod = Math.floor((competences.value - 10) / 2);
     }
   }
 
@@ -88,8 +94,8 @@ export class LamesCardinalActor extends Actor {
 
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
-    if (data.abilities) {
-      for (let [k, v] of Object.entries(data.abilities)) {
+    if (data.carac) {
+      for (let [k, v] of Object.entries(data.carac)) {
         data[k] = foundry.utils.deepClone(v);
       }
     }
