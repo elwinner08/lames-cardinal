@@ -14,6 +14,11 @@ LAMES_CARDINAL.abilities = {
   cha: 'LAMES_CARDINAL.Ability.Cha.long',
 };
 
+LAMES_CARDINAL.titre = {
+  carac: 'LAMES_CARDINAL.titres.carac',
+  competences: 'LAMES_CARDINAL.titres.competences'
+}
+
 LAMES_CARDINAL.carac = {
   puissant: 'LAMES_CARDINAL.carac.puissant',
   vif: 'LAMES_CARDINAL.carac.vif',

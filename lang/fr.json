@@ -30,6 +30,10 @@
       "escrime": "Escrime",
       "occultisme": "Occultisme"
     },
+    "titres": {
+      "carac": "CARACTERISTIQUES",
+      "competences": "COMPETENCES"
+    },
     "Ability": {
       "Str": {
         "long": "Strength",

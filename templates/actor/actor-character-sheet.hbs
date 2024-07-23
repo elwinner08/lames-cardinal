@@ -58,57 +58,231 @@
 
     {{!-- Owned Features Tab --}}
     <div class="tab features" data-group="primary" data-tab="features">
-      <section class="grid grid-3col">
-        <aside class="sidebar">
-          {{!--
-          The grid classes are defined in scss/global/_grid.scss. To use,
-          use both the "grid" and "grid-Ncol" class where "N" can be any number
-          from 1 to 12 and will create that number of columns.
-          1er bloc pour les carac--}}
-          <div class="carac flexcol">
-            <div class="resource flex-group-center">
-              <label class="resource-label"> CARACTERISTIQUES</label>
-              {{#each system.carac as |carac key|}}
-              <div class="carac flexrow flex-group-center">
-                <label for="system.carac{{key}}.value" class="resource-label rollable flexlarge align-left"
-                  data-roll="d20+@carac.{{key}}.mod" data-label="{{carac.label}}">{{localize carac.label}}</label>
-                <input type="text" name="system.carac.{{key}}.value" value="{{carac.value}}" data-dtype="Number" />
-                <span class="carac-mod rollable" data-roll="d20+@carac.{{key}}.mod"
-                  data-label="{{carac.label}}">{{numberFormat carac.mod decimals=0 sign=true}}</span>
-              </div>
-              {{/each}}
-            </div>
-          </div>
+      {{!-- 1ère ligne pour les carac en titre de colonnes--}}
+      <label class="resource-label flex-center"> CARACTERISTIQUES</label>
+      <section class="grid grid-4col">
 
-          {{!-- 2e bloc pour les compétences --}}
-          <div class="competences flexcol">
-            <div class="resource flex-group-center">
-              <label class="resource-label"> COMPETENCES</label>
-              {{#each system.competences as |competences key|}}
-              <div class="competences flexrow flex-group-center">
-                <label for="system.competences.{{key}}.value" class="resource-label rollable flexlarge align-left"
-                  data-roll="d20+@competences.{{key}}.mod" data-label="{{competences.label}}">{{localize
-                  competences.label}}</label>
-                <input type="text" name="system.competences.{{key}}.value" value="{{competences.value}}"
-                  data-dtype="Number" />
-                <span class="competences-mod rollable" data-roll="d20+@abilities.{{key}}.mod"
-                  data-label="{{competences.label}}">{{numberFormat competences.mod decimals=0 sign=true}}</span>
-              </div>
-              {{/each}}
-            </div>
-          </div>
+        {{!--colonne 1 : Puissant--}}
+        <div class="resource flexrow flex-group-center">
+          <label class="resource-label rollable flexlarge align-left" data-roll="d20+@carac.puissant.mod"
+            data-label="Puissant">Puissant</label>
+          <input type="text" name="system.carac.puissant.value" value="system.carac.puissant.value"
+            data-dtype="Number" />
+        </div>
 
-        </aside>
+        {{!--colonne 2 : Vif--}}
+        <div class="resource flexrow flex-group-center">
+          <label class="resource-label rollable flexlarge align-left" data-roll="d20+@carac.vif.mod"
+            {{!--/*data-label="{{carac.label}}" --}}>{{localize CONFIG.LAMES_CARDINAL.carac.vif}}</label>
+          <input type="text" name="system.carac.vif.value" value="system.carac.vif.value" data-dtype="Number" />
+        </div>
 
-        {{!-- For the main features list, span the right two columns --}}
-        <section class="main grid-span-2">
-          {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in
-          module/helpers/templates.mjs --}}
-          {{> "systems/lames-cardinal/templates/actor/parts/actor-features.hbs"}}
-        </section>
+        {{!--colonne 3 : Galant--}}
+        <div class="resource flexrow flex-group-center">
+          <label class="resource-label rollable flexlarge align-left" data-roll="d20+@carac.galant.mod"
+            {{!--/*data-label="{{carac.label}}" --}}>{{localize CONFIG.LAMES_CARDINAL.carac.galant}}</label>
+          <input type="text" name="system.carac.galant.value" value="system.carac.galant.value" data-dtype="Number" />
+        </div>
+
+        {{!--colonne 4 : Fin--}}
+        <div class="resource flexrow flex-group-center">
+          <label class="resource-label rollable flexlarge align-left" data-roll="d20+@carac.fin.mod"
+            {{!--/*data-label="{{carac.label}}" --}}>{{localize CONFIG.LAMES_CARDINAL.carac.fin}}</label>
+          <input type="text" name="system.carac.fin.value" value="system.carac.fin.value" data-dtype="Number" />
+        </div>
 
       </section>
+
+      {{!-- 2e ENORME ligne pour les compétences en colonnes--}}
+      <label class="resource-label"> {{localize CONFIG.LAMES_CARDINAL.titres.competences}}</label>
+      <section class="grid grid-4col">
+
+        {{!--colonne 1 : Puissant--}}
+        <div class="competences flexcol">
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.athletisme.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.athletisme}}</label>
+            <input type="text" name="system.competence.athletisme.value" value="system.competence.athletisme.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.autorite.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.autorite}}</label>
+            <input type="text" name="system.competence.autorite.value" value="system.competence.autorite.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.bagarre.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.bagarre}}</label>
+            <input type="text" name="system.competence.bagarre.value" value="system.competence.bagarre.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.equitation.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.equitation}}</label>
+            <input type="text" name="system.competence.equitation.value" value="system.competence.equitation.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.volonte.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.volonte}}</label>
+            <input type="text" name="system.competence.volonte.value" value="system.competence.volonte.value"
+              data-dtype="Number" />
+          </div>
+        </div>
+
+        {{!--colonne 2 : Vif--}}
+        <div class="competences flexcol">
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.adaptation.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.adaptation}}</label>
+            <input type="text" name="system.competences.adaptation.value" value="system.competences.adaptation.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.creation.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.creation}}</label>
+            <input type="text" name="system.competences.creation.value" value="system.competences.creation.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.duperie.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.duperie}}</label>
+            <input type="text" name="system.competences.duperie.value" value="system.competences.duperie.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.furtivite.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.furtivite}}</label>
+            <input type="text" name="system.competences.furtivite.value" value="system.competences.furtivite.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.vigilance.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.vigilance}}</label>
+            <input type="text" name="system.competences.vigilance.value" value="system.competences.vigilance.value"
+              data-dtype="Number" />
+          </div>
+        </div>
+
+        {{!--colonne 3 : Galant--}}
+        <div class="competences flexcol">
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.intrigue.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.intrigue}}</label>
+            <input type="text" name="system.competences.intrigue.value" value="system.competences.intrigue.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.jeu.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.jeu}}</label>
+            <input type="text" name="system.competences.jeu.value" value="system.competences.jeu.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.negoce.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.negoce}}</label>
+            <input type="text" name="system.competences.negoce.value" value="system.competences.negoce.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.persuasion.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.persuasion}}</label>
+            <input type="text" name="system.competences.persuasion.value" value="system.competences.persuasion.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.seduction.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.seduction}}</label>
+            <input type="text" name="system.competences.seduction.value" value="system.competences.seduction.value"
+              data-dtype="Number" />
+          </div>
+        </div>
+
+        {{!--colonne 4 : Fin--}}
+        <div class="competences flexcol">
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.erudition.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.erudition}}</label>
+            <input type="text" name="system.competences.erudition.value" value="system.competences.erudition.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.investigation.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.investigation}}</label>
+            <input type="text" name="system.competences.investigation.value"
+              value="system.competences.investigation.value" data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.medecine.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.medecine}}</label>
+            <input type="text" name="system.competences.medecine.value" value="system.competences.medecine.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.technique.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize
+              CONFIG.LAMES_CARDINAL.competences.technique}}</label>
+            <input type="text" name="system.competences.technique.value" value="system.competences.technique.value"
+              data-dtype="Number" />
+          </div>
+          <div class="resource flexrow flex-group-center">
+            <label class="resource-label rollable flexlarge align-left" data-roll="d20+@competences.tir.mod"
+              {{!--/*data-label="{{competences.label}}" --}}>{{localize CONFIG.LAMES_CARDINAL.competences.tir}}</label>
+            <input type="text" name="system.competences.tir.value" value="system.competences.tir.value"
+              data-dtype="Number" />
+          </div>
+        </div>
+      </section>
+
+      {{!-- 2e bloc pour les compétences
+      <div class="competences flexcol">
+        <div class="resource flex-group-center">
+          <label class="resource-label"> {{localize CONFIG.LAMES_CARDINAL.titres.competences}}</label>
+          {{#each system.competences as |competences key|}}
+          <div class="competences flexrow flex-group-center">
+            <label for="system.competences.{{key}}.value" class="resource-label rollable flexlarge align-left"
+              data-roll="d20+@competences.{{key}}.mod" data-label="{{competences.label}}">{{localize
+              competences.label}}</label>
+            <input type="text" name="system.competences.{{key}}.value" value="{{competences.value}}"
+              data-dtype="Number" />
+            <span class="competences-mod rollable" data-roll="d20+@abilities.{{key}}.mod"
+              data-label="{{competences.label}}">{{numberFormat competences.mod decimals=0 sign=true}}</span>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      --}}
+
+
+      {{!--
+      {{!-- For the main features list, span the right two columns --}}
+      <section class="main grid-span-2">
+        {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in
+        module/helpers/templates.mjs --}}
+        {{> "systems/lames-cardinal/templates/actor/parts/actor-features.hbs"}}
+      </section>
+      --}}
     </div>
+
 
     {{!-- Biography Tab --}}
     <div class="tab biography" data-group="primary" data-tab="description">
