@@ -15,35 +15,35 @@ LAMES_CARDINAL.abilities = {
 };
 
 LAMES_CARDINAL.carac = {
-  puissant: 'LAMES_CARDINAL.carac.puissant.long',
-  vif: 'LAMES_CARDINAL.carac.vif.long',
-  galant: 'LAMES_CARDINAL.carac.galant.long',
-  fin: 'LAMES_CARDINAL.carac.fin.long'
+  puissant: 'LAMES_CARDINAL.carac.puissant',
+  vif: 'LAMES_CARDINAL.carac.vif',
+  galant: 'LAMES_CARDINAL.carac.galant',
+  fin: 'LAMES_CARDINAL.carac.fin'
 };
 
 LAMES_CARDINAL.competences = {
-  athletisme: 'LAMES_CARDINAL.carac.athletisme.long',
-  autorite: 'LAMES_CARDINAL.carac.autorite.long',
-  bagarre: 'LAMES_CARDINAL.carac.bagarre.long',
-  equitation: 'LAMES_CARDINAL.carac.equitation.long',
-  volonte: 'LAMES_CARDINAL.carac.volonte.long',
-  adaptation: 'LAMES_CARDINAL.carac.adaptation.long',
-  creativite: 'LAMES_CARDINAL.carac.creativite.long',
-  duperie: 'LAMES_CARDINAL.carac.duperie.long',
-  furtivite: 'LAMES_CARDINAL.carac.furtivite.long',
-  vigilance: 'LAMES_CARDINAL.carac.vigilance.long',
-  intrigue: 'LAMES_CARDINAL.carac.intrigue.long',
-  jeu: 'LAMES_CARDINAL.carac.jeu.long',
-  negoce: 'LAMES_CARDINAL.carac.negoce.long',
-  persuasion: 'LAMES_CARDINAL.carac.persuasion.long',
-  seduction: 'LAMES_CARDINAL.carac.seduction.long',
-  erudition: 'LAMES_CARDINAL.carac.erudition.long',
-  investigation: 'LAMES_CARDINAL.carac.investigation.long',
-  medecine: 'LAMES_CARDINAL.carac.medecine.long',
-  technique: 'LAMES_CARDINAL.carac.technique.long',
-  tir: 'LAMES_CARDINAL.carac.tir.long',
-  escrime: 'LAMES_CARDINAL.carac.escrime.long',
-  occultisme: 'LAMES_CARDINAL.carac.occultisme.long'
+  athletisme: 'LAMES_CARDINAL.competences.athletisme',
+  autorite: 'LAMES_CARDINAL.competences.autorite',
+  bagarre: 'LAMES_CARDINAL.competences.bagarre',
+  equitation: 'LAMES_CARDINAL.competences.equitation',
+  volonte: 'LAMES_CARDINAL.competences.volonte',
+  adaptation: 'LAMES_CARDINAL.competences.adaptation',
+  creativite: 'LAMES_CARDINAL.competences.creativite',
+  duperie: 'LAMES_CARDINAL.competences.duperie',
+  furtivite: 'LAMES_CARDINAL.competences.furtivite',
+  vigilance: 'LAMES_CARDINAL.competences.vigilance',
+  intrigue: 'LAMES_CARDINAL.competences.intrigue',
+  jeu: 'LAMES_CARDINAL.competences.jeu',
+  negoce: 'LAMES_CARDINAL.competences.negoce',
+  persuasion: 'LAMES_CARDINAL.competences.persuasion',
+  seduction: 'LAMES_CARDINAL.competences.seduction',
+  erudition: 'LAMES_CARDINAL.competences.erudition',
+  investigation: 'LAMES_CARDINAL.competences.investigation',
+  medecine: 'LAMES_CARDINAL.competences.medecine',
+  technique: 'LAMES_CARDINAL.competences.technique',
+  tir: 'LAMES_CARDINAL.competences.tir',
+  escrime: 'LAMES_CARDINAL.competences.escrime',
+  occultisme: 'LAMES_CARDINAL.competences.occultisme'
 
 };
 

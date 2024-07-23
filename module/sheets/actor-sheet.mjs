@@ -1,3 +1,4 @@
+import { LAMES_CARDINAL } from '../helpers/config.mjs';
 import {
   onManageActiveEffect,
   prepareActiveEffectCategories,
@@ -77,10 +78,15 @@ export class LamesCardinalActorSheet extends ActorSheet {
    *
    * @return {undefined}
    */
+
   _prepareCharacterData(context) {
-    // Handle ability scores.
+    // Handle carac scores.
     for (let [k, v] of Object.entries(context.system.carac)) {
       v.label = game.i18n.localize(CONFIG.LAMES_CARDINAL.carac[k]) ?? k;
+    }
+    // Handle competences scores.
+    for (let [k, v] of Object.entries(context.system.competences)) {
+      v.label = game.i18n.localize(CONFIG.LAMES_CARDINAL.competences[k]) ?? k;
     }
   }
 

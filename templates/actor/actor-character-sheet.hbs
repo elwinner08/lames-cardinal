@@ -71,7 +71,7 @@
               {{#each system.carac as |carac key|}}
               <div class="carac flexrow flex-group-center">
                 <label for="system.carac{{key}}.value" class="resource-label rollable flexlarge align-left"
-                  data-roll="d20+@carac.{{key}}.mod" data-label="{{carac.label}}">{{carac.label}}</label>
+                  data-roll="d20+@carac.{{key}}.mod" data-label="{{carac.label}}">{{localize carac.label}}</label>
                 <input type="text" name="system.carac.{{key}}.value" value="{{carac.value}}" data-dtype="Number" />
                 <span class="carac-mod rollable" data-roll="d20+@carac.{{key}}.mod"
                   data-label="{{carac.label}}">{{numberFormat carac.mod decimals=0 sign=true}}</span>
@@ -81,17 +81,18 @@
           </div>
 
           {{!-- 2e bloc pour les compétences --}}
-          <div class="abilities flexcol">
+          <div class="competences flexcol">
             <div class="resource flex-group-center">
               <label class="resource-label"> COMPETENCES</label>
-              {{#each system.abilities.competences as |ability key|}}
-              <div class="ability flexrow flex-group-center">
-                <label for="system.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left"
-                  data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-                <input type="text" name="system.abilities.{{key}}.value" value="{{ability.value}}"
+              {{#each system.competences as |competences key|}}
+              <div class="competences flexrow flex-group-center">
+                <label for="system.competences.{{key}}.value" class="resource-label rollable flexlarge align-left"
+                  data-roll="d20+@competences.{{key}}.mod" data-label="{{competences.label}}">{{localize
+                  competences.label}}</label>
+                <input type="text" name="system.competences.{{key}}.value" value="{{competences.value}}"
                   data-dtype="Number" />
-                <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod"
-                  data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+                <span class="competences-mod rollable" data-roll="d20+@abilities.{{key}}.mod"
+                  data-label="{{competences.label}}">{{numberFormat competences.mod decimals=0 sign=true}}</span>
               </div>
               {{/each}}
             </div>

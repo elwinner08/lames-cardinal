@@ -1,112 +1,34 @@
 {
   "LAMES_CARDINAL": {
     "carac": {
-      "puissant": {
-        "long": "Puissant",
-        "abbr": "pui"
-      },
-      "fin": {
-        "long": "Fin",
-        "abbr": "fin"
-      },
-      "vif": {
-        "long": "Vif",
-        "abbr": "vif"
-      },
-      "galant": {
-        "long": "Galant",
-        "abbr": "gal"
-      }
+      "puissant": "Puissant",
+      "fin": "Fin",
+      "vif": "Vif",
+      "galant": "Galant"
     },
     "competences": {
-      "athletisme": {
-        "long": "Athlétisme",
-        "abbr": "athlé"
-      },
-      "autorite": {
-        "long": "Autorité",
-        "abbr": "aut"
-      },
-      "bagarre": {
-        "long": "Bagarre",
-        "abbr": "bag"
-      },
-      "equitation": {
-        "long": "Equitation",
-        "abbr": "équ"
-      },
-      "volonte": {
-        "long": "Volonté",
-        "abbr": "vol"
-      },
-      "adaptation": {
-        "long": "Adaptation",
-        "abbr": "Ada"
-      },
-      "creativite": {
-        "long": "Créativité",
-        "abbr": "créa"
-      },
-      "duperie": {
-        "long": "Duperie",
-        "abbr": "dup"
-      },
-      "furtivite": {
-        "long": "Furtivité",
-        "abbr": "fufu"
-      },
-      "vigilance": {
-        "long": "Vigilance",
-        "abbr": "vig"
-      },
-      "intrigue": {
-        "long": "Intrigue",
-        "abbr": "int"
-      },
-      "jeu": {
-        "long": "Jeu",
-        "abbr": "jeu"
-      },
-      "negoce": {
-        "long": "Négoce",
-        "abbr": "nég"
-      },
-      "persuasion": {
-        "long": "Persuasion",
-        "abbr": "per"
-      },
-      "seduction": {
-        "long": "Séduction",
-        "abbr": "séd"
-      },
-      "erudition": {
-        "long": "Erudition",
-        "abbr": "eru"
-      },
-      "investigation": {
-        "long": "Investigation",
-        "abbr": "inv"
-      },
-      "medecine": {
-        "long": "Médecine",
-        "abbr": "méd"
-      },
-      "technique": {
-        "long": "Technique",
-        "abbr": "tec"
-      },
-      "tir": {
-        "long": "Tir",
-        "abbr": "tir"
-      },
-      "escrime": {
-        "long": "Escrime",
-        "abbr": "esc"
-      },
-      "occultisme": {
-        "long": "Occultisme",
-        "abbr": "occ"
-      }
+      "athletisme": "Athlétisme",
+      "autorite": "Autorité",
+      "bagarre": "Bagarre",
+      "equitation": "Equitation",
+      "volonte": "Volonté",
+      "adaptation": "Adaptation",
+      "creativite": "Créativité",
+      "duperie": "Duperie",
+      "furtivite": "Furtivité",
+      "vigilance": "Vigilance",
+      "intrigue": "Intrigue",
+      "jeu": "Jeu",
+      "negoce": "Négoce",
+      "persuasion": "Persuasion",
+      "seduction": "Séduction",
+      "erudition": "Erudition",
+      "investigation": "Investigation",
+      "medecine": "Médecine",
+      "technique": "Technique",
+      "tir": "Tir",
+      "escrime": "Escrime",
+      "occultisme": "Occultisme"
     },
     "Ability": {
       "Str": {
