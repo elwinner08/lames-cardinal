@@ -69,7 +69,7 @@
       },
       "carac": {
         "puissant": {
-          "value": 0,
+          "value": 1,
           "max": 3
         },
         "vif": {
@@ -86,85 +86,93 @@
         }
       },
       "competences": {
-        "athletisme": {
-          "value": 0,
-          "max": 8
+        "puissant": {
+          "athletisme": {
+            "value": 0,
+            "max": 8
+          },
+          "autorite": {
+            "value": 0,
+            "max": 8
+          },
+          "bagarre": {
+            "value": 0,
+            "max": 8
+          },
+          "equilibre": {
+            "value": 0,
+            "max": 8
+          },
+          "volonte": {
+            "value": 0,
+            "max": 8
+          }
         },
-        "autorite": {
-          "value": 0,
-          "max": 8
+        "vif": {
+          "adaptation": {
+            "value": 0,
+            "max": 8
+          },
+          "creation": {
+            "value": 0,
+            "max": 8
+          },
+          "duperie": {
+            "value": 0,
+            "max": 8
+          },
+          "furtivite": {
+            "value": 0,
+            "max": 8
+          },
+          "vigilance": {
+            "value": 0,
+            "max": 8
+          }
         },
-        "bagarre": {
-          "value": 0,
-          "max": 8
+        "galant": {
+          "intrigue": {
+            "value": 0,
+            "max": 8
+          },
+          "jeu": {
+            "value": 0,
+            "max": 8
+          },
+          "negoce": {
+            "value": 0,
+            "max": 8
+          },
+          "persuasion": {
+            "value": 0,
+            "max": 8
+          },
+          "seduction": {
+            "value": 0,
+            "max": 8
+          }
         },
-        "equilibre": {
-          "value": 0,
-          "max": 8
-        },
-        "volonte": {
-          "value": 0,
-          "max": 8
-        },
-        "adaptation": {
-          "value": 0,
-          "max": 8
-        },
-        "creation": {
-          "value": 0,
-          "max": 8
-        },
-        "duperie": {
-          "value": 0,
-          "max": 8
-        },
-        "furtivite": {
-          "value": 0,
-          "max": 8
-        },
-        "vigilance": {
-          "value": 0,
-          "max": 8
-        },
-        "intrigue": {
-          "value": 0,
-          "max": 8
-        },
-        "jeu": {
-          "value": 0,
-          "max": 8
-        },
-        "negoce": {
-          "value": 0,
-          "max": 8
-        },
-        "persuasion": {
-          "value": 0,
-          "max": 8
-        },
-        "seduction": {
-          "value": 0,
-          "max": 8
-        },
-        "erudition": {
-          "value": 0,
-          "max": 8
-        },
-        "investigation": {
-          "value": 0,
-          "max": 8
-        },
-        "medecine": {
-          "value": 0,
-          "max": 8
-        },
-        "technique": {
-          "value": 0,
-          "max": 8
-        },
-        "tir": {
-          "value": 0,
-          "max": 8
+        "fin": {
+          "erudition": {
+            "value": 0,
+            "max": 8
+          },
+          "investigation": {
+            "value": 0,
+            "max": 8
+          },
+          "medecine": {
+            "value": 0,
+            "max": 8
+          },
+          "technique": {
+            "value": 0,
+            "max": 8
+          },
+          "tir": {
+            "value": 0,
+            "max": 8
+          }
         },
         "occultisme": {
           "value": 0,

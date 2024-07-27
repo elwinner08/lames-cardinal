@@ -1,5 +1,9 @@
 {
   "LAMES_CARDINAL": {
+    "titres": {
+      "carac": "CARACTERISTIQUES",
+      "competences": "COMPENTECES"
+    },
     "carac": {
       "puissant": "Puissant",
       "fin": "Fin",

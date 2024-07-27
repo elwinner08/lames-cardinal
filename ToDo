@@ -95,5 +95,7 @@ Le tir est commandé par la caractéristique dépendante de la compétence en je
 la caractéristique (1 réussite par carte, 2 par figure). Calculer automatiquement le nombre de réussite, l'afficher et afficher un bouton (MJ)
  pour masquer les cartes tirées. 
 
- Mettre les caractéristique dans le sheet-header sous carac grid grid-4
+ Mettre le titre "caracatéristique" au centre
+ Mettre les valeurs de compétences en <span>
+ Mettre l'escrime et l'occultisme en <span> juste sous caractéristiques
  */
