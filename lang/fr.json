@@ -2,41 +2,45 @@
   "LAMES_CARDINAL": {
     "titres": {
       "carac": "CARACTERISTIQUES",
-      "competences": "COMPENTECES"
+      "competences": "COMPETENCES"
     },
     "carac": {
-      "puissant": "Puissant",
-      "fin": "Fin",
-      "vif": "Vif",
-      "galant": "Galant"
+      "puissant": "Puissance",
+      "fin": "Finesse",
+      "vif": "Vivacité",
+      "galant": "Galanterie"
     },
     "competences": {
-      "athletisme": "Athlétisme",
-      "autorite": "Autorité",
-      "bagarre": "Bagarre",
-      "equitation": "Equitation",
-      "volonte": "Volonté",
-      "adaptation": "Adaptation",
-      "creativite": "Créativité",
-      "duperie": "Duperie",
-      "furtivite": "Furtivité",
-      "vigilance": "Vigilance",
-      "intrigue": "Intrigue",
-      "jeu": "Jeu",
-      "negoce": "Négoce",
-      "persuasion": "Persuasion",
-      "seduction": "Séduction",
-      "erudition": "Erudition",
-      "investigation": "Investigation",
-      "medecine": "Médecine",
-      "technique": "Technique",
-      "tir": "Tir",
+      "puissant": {
+        "athletisme": "Athlétisme",
+        "autorite": "Autorité",
+        "bagarre": "Bagarre",
+        "equitation": "Equitation",
+        "volonte": "Volonté",
+      },
+      "vif": {
+        "creation": "Création",
+        "Débrouille": "Débrouille",
+        "duperie": "Duperie",
+        "furtivite": "Furtivité",
+        "vigilance": "Vigilance",
+      },
+      "galant": {
+        "intrigue": "Intrigue",
+        "negoce": "Négoce",
+        "persuasion": "Persuasion",
+        "seduction": "Séduction",
+        "strategie": "Stratégie",
+      },
+      "fin": {
+        "erudition": "Erudition",
+        "investigation": "Investigation",
+        "medecine": "Médecine",
+        "technique": "Technique",
+        "tir": "Tir",
+      },
       "escrime": "Escrime",
       "occultisme": "Occultisme"
-    },
-    "titres": {
-      "carac": "CARACTERISTIQUES",
-      "competences": "COMPETENCES"
     },
     "Ability": {
       "Str": {

@@ -70,25 +70,25 @@
       "carac": {
         "puissant": {
           "value": 1,
-          "max": 3
+          "max": 4
         },
         "vif": {
           "value": 0,
-          "max": 3
+          "max": 4
         },
         "fin": {
           "value": 0,
-          "max": 3
+          "max": 4
         },
         "galant": {
           "value": 0,
-          "max": 3
+          "max": 4
         }
       },
       "competences": {
         "puissant": {
           "athletisme": {
-            "value": 0,
+            "value": 3,
             "max": 8
           },
           "autorite": {
@@ -99,7 +99,7 @@
             "value": 0,
             "max": 8
           },
-          "equilibre": {
+          "equitation": {
             "value": 0,
             "max": 8
           },
@@ -109,11 +109,11 @@
           }
         },
         "vif": {
-          "adaptation": {
+          "creation": {
             "value": 0,
             "max": 8
           },
-          "creation": {
+          "debrouille": {
             "value": 0,
             "max": 8
           },
@@ -135,10 +135,6 @@
             "value": 0,
             "max": 8
           },
-          "jeu": {
-            "value": 0,
-            "max": 8
-          },
           "negoce": {
             "value": 0,
             "max": 8
@@ -148,6 +144,10 @@
             "max": 8
           },
           "seduction": {
+            "value": 0,
+            "max": 8
+          },
+          "strategie": {
             "value": 0,
             "max": 8
           }
